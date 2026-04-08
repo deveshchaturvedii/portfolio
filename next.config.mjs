@@ -1,5 +1,4 @@
 const nextConfig = {
-  output: 'export',
   basePath: '/portfolio',
   assetPrefix: '/portfolio/',
   publicRuntimeConfig: {
