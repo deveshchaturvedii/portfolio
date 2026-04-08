@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { X, Mic, Trophy, Globe, ArrowLeft } from "lucide-react"
+import getConfig from "next/config"
 
 const journeyItems = [
   {
@@ -25,7 +26,7 @@ He has also served as a jury member in the selection committees of several reput
 Devesh Chaturvedi is a B-High grade artist from All India Radio. He has given his voice in many TV serials, documentary films, musical ballets, etc. His music albums of Ghazals and Bhajans have also been released.
 
 Nowadays, he is giving his services to the music world through the legacy of Indian Music.`,
-    image: "/journey/musical-journey.jpg",
+    image: `${publicRuntimeConfig.assetPrefix}journey/musical-journey.jpg`,
     icon: Mic,
     type: "modal" as const,
   },
@@ -41,7 +42,7 @@ This prestigious national platform on ZEE TV in 1996 brought together the finest
 The experience was transformative - performing on national television, receiving guidance from industry legends, and connecting with fellow artists who shared the same passion for music. It opened doors to numerous opportunities and helped him reach audiences he could never have imagined.
 
 This achievement remains close to his heart, not just as a personal milestone, but as a moment that brought pride to his hometown Lucknow and its rich musical heritage.`,
-    image: "/journey/sa-re-ga-ma.jpg",
+    image: `${publicRuntimeConfig.assetPrefix}journey/sa-re-ga-ma.jpg`,
     icon: Trophy,
     type: "video" as const,
     youtubeUrl: "https://www.youtube.com/watch?v=HyLbYiS9MBU",
@@ -61,7 +62,7 @@ He conducted numerous workshops, recitals, and educational programs that introdu
 This experience reinforced his belief that music knows no boundaries. Whether in the temples of India or the cultural centers of South America, the soul-stirring melodies of Indian classical traditions have the power to unite hearts and transcend all barriers.
 
 His work in Suriname was not just about teaching notes and scales - it was about sharing a piece of India's soul with the world.`,
-    image: "/journey/spreading-culture.jpg", 
+    image: `${publicRuntimeConfig.assetPrefix}journey/spreading-culture.jpg`,
     icon: Globe,
     type: "video" as const,
     youtubeUrl: "https://www.youtube.com/watch?v=1jrOOkcPR5g",
