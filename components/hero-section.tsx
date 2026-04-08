@@ -1,16 +1,26 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-start pt-24">
       {/* Background Image */}
+      <Image
+        src="/portfolio/hero-image.jpg"
+        alt="Devesh Chaturvedi"
+        fill
+        priority
+        unoptimized
+        className="object-cover"
+        style={{ objectPosition: '75% 15%' }}
+      />
+
+      {/* Gradient Overlay */}
       <div
-        className="absolute inset-0 bg-no-repeat"
+        className="absolute inset-0"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(17, 17, 27, 0.95) 0%, rgba(17, 17, 27, 0.7) 40%, rgba(17, 17, 27, 0.3) 100%), url('/portfolio/hero-image.jpg')`,
-          backgroundPosition: '75% 15%',
-          backgroundSize: 'cover'
+          background: 'linear-gradient(to right, rgba(17,17,27,0.95) 0%, rgba(17,17,27,0.7) 40%, rgba(17,17,27,0.3) 100%)'
         }}
       />
 
