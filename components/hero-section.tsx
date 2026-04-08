@@ -8,7 +8,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(17, 17, 27, 0.95) 0%, rgba(17, 17, 27, 0.7) 40%, rgba(17, 17, 27, 0.3) 100%), url('/hero-image.jpg')`,
+          backgroundImage: `linear-gradient(to right, rgba(17, 17, 27, 0.95) 0%, rgba(17, 17, 27, 0.7) 40%, rgba(17, 17, 27, 0.3) 100%), url('/portfolio/hero-image.jpg')`,
           backgroundPosition: '75% 15%',
           backgroundSize: 'cover'
         }}
