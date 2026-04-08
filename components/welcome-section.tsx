@@ -6,21 +6,6 @@ export function WelcomeSection() {
   return (
     <section className="py-16 bg-background relative overflow-hidden">
       <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-        {/* Animated Musical Notes */}
-        <div className="flex justify-center gap-2 mb-6">
-          {["S", "a", "R", "e", "G", "a", "M", "a"].map((note, index) => (
-            <span
-              key={index}
-              className="text-2xl md:text-3xl font-serif text-primary animate-bounce"
-              style={{ 
-                animationDelay: `${index * 0.1}s`,
-                animationDuration: '1.5s'
-              }}
-            >
-              {note}
-            </span>
-          ))}
-        </div>
         
         {/* Title with gradient */}
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">

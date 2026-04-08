@@ -5,15 +5,15 @@ export function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-start pt-24">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(17, 17, 27, 0.95) 0%, rgba(17, 17, 27, 0.7) 40%, rgba(17, 17, 27, 0.3) 100%), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/474747251_1142893297616429_6745541423568859555_n-5dHtt8EKG8bwBUzr3qYDcdGBM6DY4I.jpg')`,
+          backgroundImage: `linear-gradient(to right, rgba(17, 17, 27, 0.95) 0%, rgba(17, 17, 27, 0.7) 40%, rgba(17, 17, 27, 0.3) 100%), url('/hero-image.jpg')`,
           backgroundPosition: '75% 15%',
           backgroundSize: 'cover'
         }}
       />
-      
+
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <div className="max-w-2xl">
@@ -24,14 +24,14 @@ export function HeroSection() {
             Discover Devesh Chaturvedi&apos;s soulful renditions of Indian Classical Music
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
+            <Button
               asChild
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground tracking-widest px-8 py-6"
             >
               <Link href="#music">LISTEN NOW</Link>
             </Button>
-            <Button 
+            <Button
               asChild
               variant="ghost"
               className="text-muted-foreground hover:text-foreground tracking-widest px-8 py-6"
@@ -41,7 +41,7 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-      
+
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex items-start justify-center p-2">
